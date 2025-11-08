@@ -17,6 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void addTodo();
+    void deleteTodo();
+    void onReturnPressed();
+
 private:
     Ui::MainWindow *ui;
 };
